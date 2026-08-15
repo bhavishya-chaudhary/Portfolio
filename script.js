@@ -21,14 +21,13 @@ function match(n){
   if(n.includes("farm"))return"farmtrack";
 }
 async function init(){
-  const names=await getImages(), track=document.querySelector(".carousel-track"), dots=document.querySelector(".carousel-dots");
+  const names=await getImages(), track=document.querySelector(".carousel-track");
   let current=0,timer;
   names.forEach((name,i)=>{
     const card=document.createElement("div");card.className="carousel-card";
     const img=document.createElement("img");img.src=DIR+encodeURIComponent(name);img.alt=label(name);img.loading=i<3?"eager":"lazy";
     const cap=document.createElement("div");cap.className="image-name";cap.textContent=label(name);
     card.append(img,cap);track.appendChild(card);
-    const dot=document.createElement("button");dot.type="button";dot.setAttribute("aria-label",label(name));dot.onclick=()=>{show(i);restart()};dots.appendChild(dot);
   });
   function render(){
     [...track.children].forEach((c,i)=>{
@@ -36,7 +35,6 @@ async function init(){
       c.className="carousel-card";
       if(d===0)c.classList.add("center");else if(d===-1)c.classList.add("left1");else if(d===1)c.classList.add("right1");else if(d===-2)c.classList.add("left2");else if(d===2)c.classList.add("right2");else c.classList.add("far");
     });
-    [...dots.children].forEach((d,i)=>d.classList.toggle("active",i===current));
   }
   function show(i){current=(i+names.length)%names.length;render()}
   function restart(){clearInterval(timer);if(names.length>1)timer=setInterval(()=>show(current+1),4500)}
@@ -49,4 +47,21 @@ async function init(){
     if(found)img.src=DIR+encodeURIComponent(found);else img.parentElement.style.display="none";
   });
 }
+
+const themeToggle = document.getElementById("themeToggle");
+const savedTheme = localStorage.getItem("portfolio-theme");
+if(savedTheme === "dark") document.documentElement.classList.add("dark");
+function updateThemeButton(){
+  if(!themeToggle) return;
+  const dark = document.documentElement.classList.contains("dark");
+  themeToggle.querySelector(".theme-icon").textContent = dark ? "☀" : "☾";
+  themeToggle.querySelector(".theme-label").textContent = dark ? "LIGHT" : "DARK";
+}
+themeToggle?.addEventListener("click",()=>{
+  document.documentElement.classList.toggle("dark");
+  localStorage.setItem("portfolio-theme",document.documentElement.classList.contains("dark")?"dark":"light");
+  updateThemeButton();
+});
+updateThemeButton();
+
 document.addEventListener("DOMContentLoaded",init);

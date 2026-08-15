@@ -1,1 +1,8 @@
-Put ALL project photos in this folder. The homepage discovers every JPG, PNG, WEBP, GIF or AVIF automatically through the GitHub API. The filename without extension is shown below each carousel image.
+PROJECT IMAGES ARE INTENTIONALLY NOT INCLUDED IN THIS PACKAGE.
+Add your own project photos here later.
+
+The homepage carousel will automatically discover supported image files
+from this folder through the GitHub API when the site is hosted.
+
+Supported: JPG, JPEG, PNG, WEBP, GIF, AVIF.
+The filename without its extension is shown on each image.
