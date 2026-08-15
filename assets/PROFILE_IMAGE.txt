@@ -1,5 +1,0 @@
-Put your portrait here as:
-assets/profile.jpg
-
-Recommended: a clear head-and-shoulders photo, ideally 800–1200 px tall.
-If your image is PNG or WEBP, rename the file and update index.html accordingly.
