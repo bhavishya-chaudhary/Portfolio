@@ -1,0 +1,8 @@
+Add these five project images with exactly these filenames:
+desko.jpg
+tilt-rotor.jpg
+cnc.jpg
+magnetic-gear.jpg
+farmtrack.jpg
+
+They are used by the homepage project slideshow.

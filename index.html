@@ -10,36 +10,58 @@
 <body>
   <header class="nav">
     <a class="logo" href="#top"><img src="assets/profile.jpeg" alt="Bhavishya Chaudhary">Bhavishya Chaudhary</a>
-    <nav>
-      <a href="#about">About</a><a href="#projects">Projects</a>
-      <a href="#projects">Projects</a>
-      <a href="#skills">Skills</a>
-      <a href="#experience">Experience</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <a class="nav-cta" href="#projects">View Work ↗</a>
+    <nav><a href="#about">About</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#contact">Contact</a></nav>
   </header>
 
   <main id="top">
     <section class="hero">
-      <div class="hero-copy">
-        <p class="eyebrow">MECHANICAL ENGINEERING × ROBOTICS</p>
-        <h1>Designing things<br><span>that move.</span></h1>
-        <p class="hero-text">
-          Mechanical Engineering student at SVNIT building practical systems across
-          CAD, manufacturing, CNC, robotics, embedded electronics and aerospace.
-        </p>
-        <div class="hero-actions">
-          <a class="button primary" href="#projects">Explore projects</a>
-          <a class="button secondary" href="https://www.linkedin.com/in/bhavishya-chaudhary-svnitin/bhavishya-chaudhary-svnit" target="_blank" rel="noreferrer">LinkedIn ↗</a>
-        </div>
+  <div class="hero-copy">
+    <p class="eyebrow">MECHANICAL ENGINEERING × ROBOTICS</p>
+    <h1>Designing things<br><span>that move.</span></h1>
+    <p class="hero-text">
+      Mechanical Engineering student at SVNIT building practical systems across
+      CAD, manufacturing, CNC, robotics, embedded electronics and aerospace.
+    </p>
+    <div class="hero-actions">
+      <a class="button primary" href="#projects">Explore projects</a>
+      <a class="button secondary" href="https://drive.google.com/file/d/1G9llc9Zs-mlcIw2bbOlYQo4VuichlDHJ/view?usp=sharing" target="_blank" rel="noreferrer">Resume ↗</a>
+    </div>
+  </div>
+
+  <div class="hero-card">
+    <div class="project-slider" aria-label="Project photos">
+      <div class="slide active">
+        <img src="assets/desko.jpg" alt="Desko project">
+        <span>DESKO</span>
       </div>
-      <div class="hero-card">
-        <div class="grid-art"></div>
-        <div class="hero-stat"><strong>10+</strong><span>Engineering<br>Projects</span></div>
-        <div class="hero-tag">CAD / CNC / ROBOTICS / UAV</div>
+      <div class="slide">
+        <img src="assets/tilt-rotor.jpg" alt="Tilt-Rotor VTOL UAV project">
+        <span>TILT-ROTOR VTOL UAV</span>
       </div>
-    </section>
+      <div class="slide">
+        <img src="assets/cnc.jpg" alt="CNC engraver upgrade">
+        <span>CNC ENGRAVER</span>
+      </div>
+      <div class="slide">
+        <img src="assets/magnetic-gear.jpg" alt="Magnetic coupled bevel gear system">
+        <span>MAGNETIC COUPLED BEVEL GEAR</span>
+      </div>
+      <div class="slide">
+        <img src="assets/farmtrack.jpg" alt="FarmTrack robot">
+        <span>FARMTRACK</span>
+      </div>
+      <button class="slider-btn prev" type="button" aria-label="Previous project photo">‹</button>
+      <button class="slider-btn next" type="button" aria-label="Next project photo">›</button>
+      <div class="slider-dots" aria-label="Choose project photo">
+        <button class="dot active" type="button" aria-label="Desko"></button>
+        <button class="dot" type="button" aria-label="Tilt-Rotor VTOL UAV"></button>
+        <button class="dot" type="button" aria-label="CNC Engraver"></button>
+        <button class="dot" type="button" aria-label="Magnetic Coupled Bevel Gear"></button>
+        <button class="dot" type="button" aria-label="FarmTrack"></button>
+      </div>
+    </div>
+  </div>
+</section>
 
     <section id="about" class="section about">
       <div class="section-label">01 — ABOUT</div>
@@ -63,7 +85,7 @@
         <article class="project featured">
           <div class="project-number">01</div>
           <div>
-            <p class="project-type">EMBEDDED / ROBOTICS</p>
+            <p class="project-type">EMBEDDED | ROBOTICS</p>
             <h3>Desko</h3>
             <p>Interactive desk robot built around ESP32-S3 with display, microphone, audio output and custom embedded software.</p>
             <div class="chips"><span>ESP32-S3</span><span>I²S</span><span>Embedded</span></div>
@@ -73,7 +95,7 @@
         <article class="project">
           <div class="project-number">02</div>
           <div>
-            <p class="project-type">AEROSPACE / DESIGN</p>
+            <p class="project-type">AEROSPACE | DESIGN</p>
             <h3>Tilt-Rotor VTOL UAV</h3>
             <p>Fixed-wing VTOL aircraft concept developed around a 4 kg MTOW mission, including wing, propulsion and flight-system design.</p>
             <div class="chips"><span>SolidWorks</span><span>UAV</span><span>Aerodynamics</span></div>
@@ -83,7 +105,7 @@
         <article class="project">
           <div class="project-number">03</div>
           <div>
-            <p class="project-type">CNC / MANUFACTURING</p>
+            <p class="project-type">CNC | MANUFACTURING</p>
             <h3>CNC Engraver Upgrade</h3>
             <p>Upgraded a GRBL-based 3018 CNC with dual-sided limit switches, probing and machine-control improvements.</p>
             <div class="chips"><span>GRBL</span><span>CAM</span><span>Manufacturing</span></div>
@@ -103,7 +125,7 @@
         <article class="project">
           <div class="project-number">05</div>
           <div>
-            <p class="project-type">ROBOTICS / MECHANICAL</p>
+            <p class="project-type">ROBOTICS | MECHANICAL</p>
             <h3>FarmTrack</h3>
             <p>Tracked robotic platform developed through multiple iterations of mechanical design, fabrication and system integration.</p>
             <div class="chips"><span>Robotics</span><span>CAD</span><span>Fabrication</span></div>
@@ -144,6 +166,8 @@
         <a class="button secondary" href="https://github.com/bhavishya-chaudharybhavishya-chaudhary" target="_blank" rel="noreferrer">GitHub ↗</a>
         <a class="button secondary" href="https://drive.google.com/file/d/1G9llc9Zs-mlcIw2bbOlYQo4VuichlDHJ/view?usp=sharing" target="_blank" rel="noreferrer">Resume ↗</a>
       </div>
+    
+      <p class="ai-note">This portfolio website was created with the help of AI and refined by me.</p>
     </section>
   </main>
 
@@ -151,5 +175,33 @@
     <span>© 2026 Bhavishya Chaudhary</span>
     <span>Built for engineering, not templates.</span>
   </footer>
+
+<script>
+(() => {
+  const slides = [...document.querySelectorAll('.slide')];
+  const dots = [...document.querySelectorAll('.dot')];
+  const prev = document.querySelector('.slider-btn.prev');
+  const next = document.querySelector('.slider-btn.next');
+  if (!slides.length) return;
+  let current = 0;
+  let timer;
+
+  function show(index) {
+    current = (index + slides.length) % slides.length;
+    slides.forEach((s, i) => s.classList.toggle('active', i === current));
+    dots.forEach((d, i) => d.classList.toggle('active', i === current));
+  }
+  function restart() {
+    clearInterval(timer);
+    timer = setInterval(() => show(current + 1), 4500);
+  }
+  prev.addEventListener('click', () => { show(current - 1); restart(); });
+  next.addEventListener('click', () => { show(current + 1); restart(); });
+  dots.forEach((d, i) => d.addEventListener('click', () => { show(i); restart(); }));
+  show(0);
+  restart();
+})();
+</script>
+
 </body>
 </html>

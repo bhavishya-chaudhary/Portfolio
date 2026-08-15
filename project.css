@@ -13,3 +13,7 @@
 .next{display:flex;justify-content:space-between;padding-top:28px;font:10px "DM Mono",monospace}.next a:hover{color:var(--accent)}
 footer{max-width:var(--max);margin:auto;padding:22px;color:#6f767d;font:9px "DM Mono",monospace;display:flex;justify-content:space-between;border-top:1px solid var(--line)}
 @media(max-width:800px){.nav nav{display:none}.nav-cta{display:none}.content{grid-template-columns:1fr;gap:20px}.cover{min-height:230px}.next{flex-direction:column;gap:12px}footer{flex-direction:column;gap:8px}}
+
+
+.section-label{font-size:13px;letter-spacing:.14em}
+.logo{display:flex;align-items:center;gap:10px}.logo img{width:36px;height:36px;border-radius:50%;object-fit:cover;border:1px solid var(--line)}
