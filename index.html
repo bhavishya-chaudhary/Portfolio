@@ -1,207 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Bhavishya Chaudhary — Mechanical Engineering, Robotics, CAD, Manufacturing and Embedded Systems portfolio.">
-  <title>Bhavishya Chaudhary | Mechanical & Robotics Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="Bhavishya Chaudhary — Mechanical Engineering and Robotics portfolio.">
+<title>Bhavishya Chaudhary | Mechanical Engineering × Robotics</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="nav">
-    <a class="logo" href="#top"><img src="assets/profile.jpeg" alt="Bhavishya Chaudhary">Bhavishya Chaudhary</a>
-    <nav><a href="#about">About</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#contact">Contact</a></nav>
-  </header>
+<header class="site-header">
+<a class="brand" href="#about"><img src="assets/profile.jpeg" alt="Bhavishya Chaudhary"><span>Bhavishya Chaudhary</span></a>
+<nav class="main-nav"><a href="#about">ABOUT</a><a href="#projects">PROJECTS</a><a href="#toolbox">TOOLBOX</a><a href="#experience">EXPERIENCE</a><a href="#contact">CONTACT</a></nav>
+</header>
 
-  <main id="top">
-    <section class="hero">
-  <div class="hero-copy">
-    <p class="eyebrow">MECHANICAL ENGINEERING × ROBOTICS</p>
-    <h1>Designing things<br><span>that move.</span></h1>
-    <p class="hero-text">
-      Mechanical Engineering student at SVNIT building practical systems across
-      CAD, manufacturing, CNC, robotics, embedded electronics and aerospace.
-    </p>
-    <div class="hero-actions">
-      <a class="button primary" href="#projects">Explore projects</a>
-      <a class="button secondary" href="https://drive.google.com/file/d/1G9llc9Zs-mlcIw2bbOlYQo4VuichlDHJ/view?usp=sharing" target="_blank" rel="noreferrer">Resume ↗</a>
-    </div>
-  </div>
-
-  <div class="hero-card">
-    <div class="project-slider" aria-label="Project photos">
-      <div class="slide active">
-        <img src="assets/desko.jpg" alt="Desko project">
-        <span>DESKO</span>
-      </div>
-      <div class="slide">
-        <img src="assets/tilt-rotor.jpg" alt="Tilt-Rotor VTOL UAV project">
-        <span>TILT-ROTOR VTOL UAV</span>
-      </div>
-      <div class="slide">
-        <img src="assets/cnc.jpg" alt="CNC engraver upgrade">
-        <span>CNC ENGRAVER</span>
-      </div>
-      <div class="slide">
-        <img src="assets/magnetic-gear.jpg" alt="Magnetic coupled bevel gear system">
-        <span>MAGNETIC COUPLED BEVEL GEAR</span>
-      </div>
-      <div class="slide">
-        <img src="assets/farmtrack.jpg" alt="FarmTrack robot">
-        <span>FARMTRACK</span>
-      </div>
-      <button class="slider-btn prev" type="button" aria-label="Previous project photo">‹</button>
-      <button class="slider-btn next" type="button" aria-label="Next project photo">›</button>
-      <div class="slider-dots" aria-label="Choose project photo">
-        <button class="dot active" type="button" aria-label="Desko"></button>
-        <button class="dot" type="button" aria-label="Tilt-Rotor VTOL UAV"></button>
-        <button class="dot" type="button" aria-label="CNC Engraver"></button>
-        <button class="dot" type="button" aria-label="Magnetic Coupled Bevel Gear"></button>
-        <button class="dot" type="button" aria-label="FarmTrack"></button>
-      </div>
-    </div>
-  </div>
+<main>
+<section id="about" class="about-section">
+<div class="section-index">01</div>
+<div class="about-copy">
+<h1>ABOUT</h1>
+<h2>MECHANICAL ENGINEERING × ROBOTICS</h2>
+<p class="specialties">CAD <span>|</span> CNC <span>|</span> ROBOTICS <span>|</span> UAV <span>|</span> DESIGN <span>|</span> BUILD</p>
+<p class="intro">I design, build and test real-world engineering systems that solve meaningful problems. I enjoy turning ideas into working prototypes through mechanical design, fabrication, robotics and embedded systems.</p>
+<p class="ai-note">✦ &nbsp; This website was designed and developed with the help of AI tools.</p>
+</div>
+<div class="showcase">
+<div id="carousel" class="carousel">
+<div class="carousel-track"></div>
+<button class="carousel-arrow left" type="button" aria-label="Previous image">‹</button>
+<button class="carousel-arrow right" type="button" aria-label="Next image">›</button>
+<div class="carousel-dots"></div>
+</div>
+</div>
 </section>
 
-    <section id="about" class="section about">
-      <div class="section-label">01 — ABOUT</div>
-      <div>
-        <h2>From concept to hardware.</h2>
-        <p>
-          I enjoy engineering problems where the final result is something physical:
-          a mechanism, robot, aircraft, CNC machine or embedded device. My work combines
-          mechanical design with hands-on fabrication, electronics and firmware.
-        </p>
-        <p>
-          Currently focused on building stronger skills in mechanical design, advanced
-          manufacturing, robotics and data/technical tools that complement engineering.
-        </p>
-      </div>
-    </section>
+<section id="projects" class="content-section projects-section">
+<div class="section-index">02</div>
+<div class="section-content"><h2 class="section-title">PROJECTS</h2>
+<div class="project-grid">
+<a class="project-card" href="projects/desko.html"><div class="project-image"><img data-project-image="desko" alt="Desko"></div><div class="project-card-body"><h3>Desko</h3><p>Interactive desk robot with voice, touch and web control.</p><span>View project →</span></div></a>
+<a class="project-card" href="projects/tilt-rotor-vtol.html"><div class="project-image"><img data-project-image="tilt-rotor" alt="Tilt-Rotor VTOL UAV"></div><div class="project-card-body"><h3>Tilt-Rotor VTOL UAV</h3><p>Fixed-wing tilt-rotor VTOL aircraft designed around a 4 kg mission.</p><span>View project →</span></div></a>
+<a class="project-card" href="projects/cnc-engraver.html"><div class="project-image"><img data-project-image="cnc" alt="CNC Engraver Upgrade"></div><div class="project-card-body"><h3>CNC Engraver Upgrade</h3><p>Upgraded TTS 3018 CNC with limit switches, probing and machine improvements.</p><span>View project →</span></div></a>
+<a class="project-card" href="projects/magnetic-bevel-gear.html"><div class="project-image"><img data-project-image="magnetic" alt="Magnetic Coupled Bevel Gear System"></div><div class="project-card-body"><h3>Magnetic Coupled Bevel Gear System</h3><p>Compact bevel-gear transmission using magnetic coupling.</p><span>View project →</span></div></a>
+<a class="project-card" href="projects/farmtrack.html"><div class="project-image"><img data-project-image="farmtrack" alt="FarmTrack"></div><div class="project-card-body"><h3>FarmTrack</h3><p>Tracked robotics platform developed through multiple iterations.</p><span>View project →</span></div></a>
+</div></div>
+</section>
 
-    <section id="projects" class="section">
-      <div class="section-label">02 — SELECTED WORK</div>
-      <div class="projects">
-        <article class="project featured">
-          <div class="project-number">01</div>
-          <div>
-            <p class="project-type">EMBEDDED | ROBOTICS</p>
-            <h3>Desko</h3>
-            <p>Interactive desk robot built around ESP32-S3 with display, microphone, audio output and custom embedded software.</p>
-            <div class="chips"><span>ESP32-S3</span><span>I²S</span><span>Embedded</span></div>
-          </div>
-          <a class="project-link" href="projects/desko.html">View project →</a>
-        </article>
-        <article class="project">
-          <div class="project-number">02</div>
-          <div>
-            <p class="project-type">AEROSPACE | DESIGN</p>
-            <h3>Tilt-Rotor VTOL UAV</h3>
-            <p>Fixed-wing VTOL aircraft concept developed around a 4 kg MTOW mission, including wing, propulsion and flight-system design.</p>
-            <div class="chips"><span>SolidWorks</span><span>UAV</span><span>Aerodynamics</span></div>
-          </div>
-          <a class="project-link" href="projects/tilt-rotor-vtol.html">View project →</a>
-        </article>
-        <article class="project">
-          <div class="project-number">03</div>
-          <div>
-            <p class="project-type">CNC | MANUFACTURING</p>
-            <h3>CNC Engraver Upgrade</h3>
-            <p>Upgraded a GRBL-based 3018 CNC with dual-sided limit switches, probing and machine-control improvements.</p>
-            <div class="chips"><span>GRBL</span><span>CAM</span><span>Manufacturing</span></div>
-          </div>
-          <a class="project-link" href="projects/cnc-engraver.html">View project →</a>
-        </article>
-        <article class="project">
-          <div class="project-number">04</div>
-          <div>
-            <p class="project-type">MECHANICAL DESIGN</p>
-            <h3>Magnetic Coupled Bevel Gear System</h3>
-            <p>Mechanical transmission concept combining bevel gearing and magnetic coupling for contactless power transfer.</p>
-            <div class="chips"><span>SolidWorks</span><span>Mechanisms</span><span>3D Printing</span></div>
-          </div>
-          <a class="project-link" href="projects/magnetic-bevel-gear.html">View project →</a>
-        </article>
-        <article class="project">
-          <div class="project-number">05</div>
-          <div>
-            <p class="project-type">ROBOTICS | MECHANICAL</p>
-            <h3>FarmTrack</h3>
-            <p>Tracked robotic platform developed through multiple iterations of mechanical design, fabrication and system integration.</p>
-            <div class="chips"><span>Robotics</span><span>CAD</span><span>Fabrication</span></div>
-          </div>
-          <a class="project-link" href="projects/farmtrack.html">View project →</a>
-        </article>
-      </div>
-    </section>
+<section id="toolbox" class="content-section toolbox-section">
+<div class="section-index">03</div><div class="section-content toolbox-content"><h2 class="section-title">TOOLBOX</h2>
+<div class="tool-list">
+<div class="tool"><strong>SOLIDWORKS</strong><span>CAD Design</span></div>
+<div class="tool"><strong>ANSYS</strong><span>Simulation</span></div>
+<div class="tool"><strong>AUTODESK FUSION 360</strong><span>CAM</span></div>
+<div class="tool"><strong>ARDUINO | ESP32</strong><span>Embedded</span></div>
+<div class="tool"><strong>ROS | IOT</strong><span>Robotics</span></div>
+<div class="tool"><strong>PYTHON | C++</strong><span>Programming</span></div>
+</div></div>
+</section>
 
-    <section id="skills" class="section skills-section">
-      <div class="section-label">03 — TOOLBOX</div>
-      <div class="skill-grid">
-        <div><h3>Mechanical</h3><p>Mechanical Design · GD&T · Manufacturing · Engineering Fundamentals · Mechanisms · Materials</p></div>
-        <div><h3>CAD / CAM</h3><p>SolidWorks · Fusion · ESTLCam · DXF workflows · CNC machining · 3D printing</p></div>
-        <div><h3>Robotics / Embedded</h3><p>ESP32 · Arduino · I²C · I²S · Sensors · Actuators · GRBL · Robot systems</p></div>
-        <div><h3>Programming / Data</h3><p>Python · SQL · Embedded C/C++ · Git · Technical data analysis</p></div>
-      </div>
-    </section>
+<section id="experience" class="content-section experience-section">
+<div class="section-index">04</div><div class="section-content"><h2 class="section-title">EXPERIENCE</h2>
+<div class="experience-list">
+<article><span class="timeline-dot"></span><div><strong>CIPET: CST</strong><small>Manufacturing Intern</small><small>1 Month</small></div></article>
+<article><span class="timeline-dot"></span><div><strong>ALBA POLYESTERS</strong><small>Plant Operations Intern</small><small>1 Month</small></div></article>
+<article><span class="timeline-dot"></span><div><strong>Tilt-Rotor VTOL UAV</strong><small>Project Intern</small><small>2 Months</small></div></article>
+</div></div>
+</section>
 
-    <section id="experience" class="section">
-      <div class="section-label">04 — EXPERIENCE</div>
-      <div class="timeline">
-        <div class="timeline-item"><span>2026</span><div><h3>SVNIT — Mechanical Engineering</h3><p>Engineering design, manufacturing, robotics and project development.</p></div></div>
-        <div class="timeline-item"><span>Internship</span><div><h3>Aerospace Engineering & Robotics</h3><p>Project internship focused on a tilt-rotor VTOL UAV.</p></div></div>
-        <div class="timeline-item"><span>Internship</span><div><h3>CIPET — Manufacturing</h3><p>Hands-on exposure to manufacturing processes and industrial practices.</p></div></div>
-        <div class="timeline-item"><span>Internship</span><div><h3>Alba Polyesters — Plant Operations</h3><p>Industrial plant operations and production exposure.</p></div></div>
-      </div>
-    </section>
-
-    <section id="contact" class="section contact">
-      <p class="eyebrow">05 — LET'S BUILD</p>
-      <h2>Have a machine,<br>robot or product to build?</h2>
-      <p>I'm interested in mechanical design, robotics, manufacturing and hands-on engineering opportunities.</p>
-      <div class="hero-actions">
-        <a class="button secondary" href="https://www.linkedin.com/in/bhavishya-chaudhary-svnitin/bhavishya-chaudhary-svnit" target="_blank" rel="noreferrer">LinkedIn ↗</a>
-        <a class="button secondary" href="https://github.com/bhavishya-chaudharybhavishya-chaudhary" target="_blank" rel="noreferrer">GitHub ↗</a>
-        <a class="button primary" href="mailto:bhavishyachaudhary2625@gmail.com">Email me ↗</a>
-        <a class="button secondary" href="https://github.com/bhavishya-chaudharybhavishya-chaudhary" target="_blank" rel="noreferrer">GitHub ↗</a>
-        <a class="button secondary" href="https://drive.google.com/file/d/1G9llc9Zs-mlcIw2bbOlYQo4VuichlDHJ/view?usp=sharing" target="_blank" rel="noreferrer">Resume ↗</a>
-      </div>
-    
-      <p class="ai-note">This portfolio website was created with the help of AI and refined by me.</p>
-    </section>
-  </main>
-
-  <footer>
-    <span>© 2026 Bhavishya Chaudhary</span>
-    <span>Built for engineering, not templates.</span>
-  </footer>
-
-<script>
-(() => {
-  const slides = [...document.querySelectorAll('.slide')];
-  const dots = [...document.querySelectorAll('.dot')];
-  const prev = document.querySelector('.slider-btn.prev');
-  const next = document.querySelector('.slider-btn.next');
-  if (!slides.length) return;
-  let current = 0;
-  let timer;
-
-  function show(index) {
-    current = (index + slides.length) % slides.length;
-    slides.forEach((s, i) => s.classList.toggle('active', i === current));
-    dots.forEach((d, i) => d.classList.toggle('active', i === current));
-  }
-  function restart() {
-    clearInterval(timer);
-    timer = setInterval(() => show(current + 1), 4500);
-  }
-  prev.addEventListener('click', () => { show(current - 1); restart(); });
-  next.addEventListener('click', () => { show(current + 1); restart(); });
-  dots.forEach((d, i) => d.addEventListener('click', () => { show(i); restart(); }));
-  show(0);
-  restart();
-})();
-</script>
-
-</body>
-</html>
+<section id="contact" class="content-section contact-section">
+<div class="section-index">05</div><div class="section-content contact-content"><h2 class="section-title">CONTACT</h2>
+<div class="contact-links">
+<a href="mailto:bhavishyachaudhary2625@gmail.com"><span>✉</span>bhavishyachaudhary2625@gmail.com</a>
+<a href="https://github.com/bhavishya-chaudhary" target="_blank" rel="noreferrer"><span>◉</span>github.com/bhavishya-chaudhary</a>
+<a href="https://www.linkedin.com/in/bhavishya-chaudhary-svnit" target="_blank" rel="noreferrer"><span>in</span>linkedin.com/in/bhavishya-chaudhary-svnit</a>
+<a href="https://drive.google.com/file/d/1G9llc9Zs-mlcIw2bbOlYQo4VuichlDHJ/view?usp=sharing" target="_blank" rel="noreferrer"><span>↗</span>Resume</a>
+</div></div>
+</section>
+</main>
+<footer><span>© 2026 Bhavishya Chaudhary</span><span>Mechanical Engineering × Robotics</span></footer>
+<script src="script.js"></script>
+</body></html>

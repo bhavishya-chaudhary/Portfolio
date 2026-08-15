@@ -1,0 +1,1 @@
+Put ALL project photos in this folder. The homepage discovers every JPG, PNG, WEBP, GIF or AVIF automatically through the GitHub API. The filename without extension is shown below each carousel image.
