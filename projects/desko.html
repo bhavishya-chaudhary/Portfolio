@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="Desko — Bhavishya Chaudhary portfolio project.">
+<title>Desko | Bhavishya Chaudhary</title>
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="../project.css">
+</head>
+<body>
+<header class="nav">
+<a class="logo" href="../index.html">Bhavishya Chaudhary<span>.</span></a>
+<nav><a href="../index.html#about">About</a><a href="../index.html#projects">Projects</a><a href="../index.html#skills">Skills</a><a href="../index.html#experience">Experience</a><a href="../index.html#contact">Contact</a></nav>
+<a class="nav-cta" href="../index.html#projects">All Projects</a>
+</header>
+<main class="page">
+<a class="back" href="../index.html#projects">← BACK TO PROJECTS</a>
+<section class="hero-project">
+<p class="eyebrow">EMBEDDED / ROBOTICS</p>
+<h1>Desko</h1>
+<p class="lead">An interactive desk robot built around an ESP32-S3, combining sensors, display, audio input/output and custom embedded software.</p>
+<div class="meta"><span>ESP32-S3</span><span>I²C</span><span>I²S Audio</span><span>OLED</span><span>INMP441</span><span>MAX98357A</span></div>
+<div class="cover"><span>PROJECT COVER IMAGE — ADD YOUR PHOTO HERE</span></div>
+</section>
+<section class="content">
+<div class="label">01 — OVERVIEW</div><div><h2>What it is</h2><p>Desko is a hands-on embedded systems project focused on building a responsive desktop robot rather than a purely software prototype. The system combines a microcontroller, display, microphone, speaker amplifier and sensors into one compact platform.</p></div>
+</section>
+<section class="content">
+<div class="label">02 — SYSTEM</div><div><h2>Technical details</h2><div class="list"><div><strong>Core controller</strong><span>ESP32-S3 with custom firmware and Wi-Fi connectivity.</span></div>
+<div><strong>User interface</strong><span>SSD1306 OLED and touch/interaction elements.</span></div>
+<div><strong>Audio input</strong><span>INMP441 digital microphone using I²S.</span></div>
+<div><strong>Audio output</strong><span>MAX98357A mono amplifier and speaker using I²S.</span></div>
+<div><strong>Communication</strong><span>I²C used for peripheral sensors/display.</span></div>
+<div><strong>Engineering focus</strong><span>Hardware integration, firmware architecture, real-time I/O and debugging.</span></div></div></div>
+</section>
+<section class="content">
+<div class="label">03 — ENGINEERING</div><div><h2>What I worked on</h2><p>A major part of the work has been diagnosing real embedded-system race conditions. The audio system uses concurrent I²S activity, and configuration changes require careful coordination between Wi-Fi/HTTP handling and the main processing loop. Testing also covered I²S Philips/standard format behavior, channel selection and playback/recording interactions.</p></div>
+</section>
+<section class="content">
+<div class="label">04 — RESOURCES</div><div>
+<h2>Project files</h2>
+<p>These buttons will point to the actual project repository and supporting CAD, code and documentation once the repository URLs are added.</p>
+<div class="resources">
+<a class="button primary" href="https://github.com/bhavishya-chaudhary/Desko">GitHub Repository ↗</a>
+<a class="button" href="https://github.com/bhavishya-chaudhary/Desko">CAD / Files ↗</a>
+<a class="button" href="https://github.com/bhavishya-chaudhary/Desko">Documentation ↗</a>
+</div></div>
+</section>
+<div class="next"><a href="tilt-rotor-vtol.html">NEXT PROJECT → Tilt-Rotor VTOL UAV</a><a href="../index.html#projects">ALL PROJECTS</a></div>
+</main>
+<footer><span>© 2026 Bhavishya Chaudhary</span><span>Mechanical Engineering × Robotics</span></footer>
+</body></html>
