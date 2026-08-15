@@ -1,5 +1,5 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>CNC Engraver Upgrade | Bhavishya Chaudhary</title><link rel="stylesheet" href="../project.css"></head><body>
-<header class="site-header"><a class="brand" href="../index.html#about"><img src="../assets/profile.jpeg" alt="Bhavishya Chaudhary"><span>Bhavishya Chaudhary</span></a><nav class="main-nav"><a href="../index.html#about">ABOUT</a><a href="../index.html#projects">PROJECTS</a><a href="../index.html#toolbox">TOOLBOX</a><a href="../index.html#experience">EXPERIENCE</a><a href="../index.html#contact">CONTACT</a></nav></header>
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>CNC Engraver Upgrade | Bhavishya Chaudhary</title><link rel="stylesheet" href="../project.css"><script>if(localStorage.getItem("portfolio-theme")==="dark")document.documentElement.classList.add("dark");</script></head><body>
+<header class="site-header"><a class="brand" href="../index.html#about"><img src="../assets/profile.jpeg" alt="Bhavishya Chaudhary"><span>Bhavishya Chaudhary</span></a><nav class="main-nav"><a href="../index.html#about">ABOUT</a><a href="../index.html#projects">PROJECTS</a><a href="../index.html#toolbox">TOOLBOX</a><a href="../index.html#experience">EXPERIENCE</a><a href="../index.html#contact">CONTACT</a><button id="themeToggle" class="theme-toggle" type="button" aria-label="Switch theme"><span class="theme-icon">☾</span><span class="theme-label">DARK</span></button></nav></header>
 <main class="page"><a class="back" href="../index.html#projects">← BACK TO PROJECTS</a>
 <section class="hero-project"><p class="eyebrow">CNC | MANUFACTURING</p><h1>CNC Engraver Upgrade</h1><p class="lead">GRBL-based TTS 3018 CNC upgraded with dual-sided limit switches, probing and machine-control improvements.</p><div class="meta"><span>GRBL 1.1h</span><span>MKS DLC32</span><span>Candle</span><span>ESTLCam</span></div><div class="cover"><span>ADD PROJECT PHOTOS FROM YOUR REPOSITORY</span></div></section>
 <section class="content"><div class="label">01 | OVERVIEW</div><div><h2>What it is</h2><p>GRBL-based TTS 3018 CNC upgraded with dual-sided limit switches, probing and machine-control improvements.</p></div></section>
@@ -7,4 +7,22 @@
 <section class="content"><div class="label">03 | ENGINEERING</div><div><h2>What I worked on</h2><p>The upgrade involved GRBL alarms, probe logic, homing behavior, controller inputs and machine-coordinate workflows.</p></div></section>
 <section class="content"><div class="label">04 | RESOURCES</div><div><h2>Project files</h2><div class="resources"><a class="button" href="https://github.com/bhavishya-chaudhary/CNC-Engraver-TTS-3018" target="_blank" rel="noreferrer">GitHub Repository ↗</a></div></div></section>
 <div class="next"><a href="magnetic-bevel-gear.html">NEXT PROJECT → Magnetic Coupled Bevel Gear</a><a href="../index.html#projects">ALL PROJECTS</a></div></main>
-<footer><span>© 2026 Bhavishya Chaudhary</span><span>Mechanical Engineering × Robotics</span></footer></body></html>
+<footer><span>© 2026 Bhavishya Chaudhary</span><span>Mechanical Engineering × Robotics</span></footer><script>
+(function(){
+  const toggle=document.getElementById("themeToggle");
+  function update(){
+    if(!toggle)return;
+    const dark=document.documentElement.classList.contains("dark");
+    const icon=toggle.querySelector(".theme-icon");
+    const label=toggle.querySelector(".theme-label");
+    if(icon)icon.textContent=dark?"☀":"☾";
+    if(label)label.textContent=dark?"LIGHT":"DARK";
+  }
+  toggle?.addEventListener("click",function(){
+    const dark=document.documentElement.classList.toggle("dark");
+    localStorage.setItem("portfolio-theme",dark?"dark":"light");
+    update();
+  });
+  update();
+})();
+</script></body></html>

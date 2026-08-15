@@ -1,5 +1,5 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Tilt-Rotor VTOL UAV | Bhavishya Chaudhary</title><link rel="stylesheet" href="../project.css"></head><body>
-<header class="site-header"><a class="brand" href="../index.html#about"><img src="../assets/profile.jpeg" alt="Bhavishya Chaudhary"><span>Bhavishya Chaudhary</span></a><nav class="main-nav"><a href="../index.html#about">ABOUT</a><a href="../index.html#projects">PROJECTS</a><a href="../index.html#toolbox">TOOLBOX</a><a href="../index.html#experience">EXPERIENCE</a><a href="../index.html#contact">CONTACT</a></nav></header>
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Tilt-Rotor VTOL UAV | Bhavishya Chaudhary</title><link rel="stylesheet" href="../project.css"><script>if(localStorage.getItem("portfolio-theme")==="dark")document.documentElement.classList.add("dark");</script></head><body>
+<header class="site-header"><a class="brand" href="../index.html#about"><img src="../assets/profile.jpeg" alt="Bhavishya Chaudhary"><span>Bhavishya Chaudhary</span></a><nav class="main-nav"><a href="../index.html#about">ABOUT</a><a href="../index.html#projects">PROJECTS</a><a href="../index.html#toolbox">TOOLBOX</a><a href="../index.html#experience">EXPERIENCE</a><a href="../index.html#contact">CONTACT</a><button id="themeToggle" class="theme-toggle" type="button" aria-label="Switch theme"><span class="theme-icon">☾</span><span class="theme-label">DARK</span></button></nav></header>
 <main class="page"><a class="back" href="../index.html#projects">← BACK TO PROJECTS</a>
 <section class="hero-project"><p class="eyebrow">AEROSPACE | DESIGN</p><h1>Tilt-Rotor VTOL UAV</h1><p class="lead">Fixed-wing tilt-rotor VTOL UAV concept developed around a 4 kg MTOW mission, including aerodynamic, structural and flight-system design.</p><div class="meta"><span>SolidWorks</span><span>NACA 2415</span><span>VTOL</span><span>Pixhawk</span><span>6S</span></div><div class="cover"><span>ADD PROJECT PHOTOS FROM YOUR REPOSITORY</span></div></section>
 <section class="content"><div class="label">01 | OVERVIEW</div><div><h2>What it is</h2><p>Fixed-wing tilt-rotor VTOL UAV concept developed around a 4 kg MTOW mission, including aerodynamic, structural and flight-system design.</p></div></section>
@@ -7,4 +7,22 @@
 <section class="content"><div class="label">03 | ENGINEERING</div><div><h2>What I worked on</h2><p>The NACA 2415 wing is part of this VTOL project, not a separate project. Wing, ribs, spars and propulsion integration are treated as one aircraft design problem.</p></div></section>
 <section class="content"><div class="label">04 | RESOURCES</div><div><h2>Project files</h2><div class="resources"><a class="button" href="#" target="_blank" rel="noreferrer">GitHub Repository ↗</a></div></div></section>
 <div class="next"><a href="cnc-engraver.html">NEXT PROJECT → CNC Engraver Upgrade</a><a href="../index.html#projects">ALL PROJECTS</a></div></main>
-<footer><span>© 2026 Bhavishya Chaudhary</span><span>Mechanical Engineering × Robotics</span></footer></body></html>
+<footer><span>© 2026 Bhavishya Chaudhary</span><span>Mechanical Engineering × Robotics</span></footer><script>
+(function(){
+  const toggle=document.getElementById("themeToggle");
+  function update(){
+    if(!toggle)return;
+    const dark=document.documentElement.classList.contains("dark");
+    const icon=toggle.querySelector(".theme-icon");
+    const label=toggle.querySelector(".theme-label");
+    if(icon)icon.textContent=dark?"☀":"☾";
+    if(label)label.textContent=dark?"LIGHT":"DARK";
+  }
+  toggle?.addEventListener("click",function(){
+    const dark=document.documentElement.classList.toggle("dark");
+    localStorage.setItem("portfolio-theme",dark?"dark":"light");
+    update();
+  });
+  update();
+})();
+</script></body></html>

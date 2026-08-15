@@ -41,11 +41,7 @@ async function init(){
   document.querySelector(".carousel-arrow.left").onclick=()=>{show(current-1);restart()};
   document.querySelector(".carousel-arrow.right").onclick=()=>{show(current+1);restart()};
   render();restart();
-
-  document.querySelectorAll("[data-project-image]").forEach(img=>{
-    const found=names.find(n=>match(n)===img.dataset.projectImage);
-    if(found)img.src=DIR+encodeURIComponent(found);else img.parentElement.style.display="none";
-  });
+  // Project-card images are intentionally disabled for now. Add them later using the same main image as each project page.
 }
 
 const themeToggle = document.getElementById("themeToggle");

@@ -17,19 +17,19 @@ a{color:inherit;text-decoration:none}
 .specialties{font:500 12px "DM Mono",monospace;color:#56606d}.specialties span{color:#84b400}
 .intro{max-width:390px;margin:27px 0 0;font-size:14px;line-height:1.75;color:#303a46}
 .ai-note{font-size:11px;font-style:italic;color:#68727e;margin-top:25px}
-.showcase{height:325px;display:flex;align-items:center}.carousel{position:relative;width:100%;height:310px;overflow:hidden;perspective:1100px}
-.carousel-track{position:absolute;inset:0;display:flex;align-items:center;justify-content:center}
-.carousel-card{position:absolute;width:230px;height:255px;border-radius:7px;overflow:hidden;transition:transform .55s ease,opacity .55s ease,filter .55s ease;box-shadow:0 4px 18px rgba(0,0,0,.13)}
-.carousel-card img{width:100%;height:100%;object-fit:cover}.carousel-card:after{content:"";position:absolute;inset:0;background:linear-gradient(to bottom,transparent 52%,rgba(0,0,0,.78))}
-.carousel-card.center{width:275px;height:295px;z-index:5}.carousel-card.left1{transform:translateX(-225px) scale(.88) rotateY(22deg);opacity:.8;z-index:4}.carousel-card.right1{transform:translateX(225px) scale(.88) rotateY(-22deg);opacity:.8;z-index:4}.carousel-card.left2{transform:translateX(-425px) scale(.7) rotateY(28deg);opacity:.25;filter:blur(.5px);z-index:2}.carousel-card.right2{transform:translateX(425px) scale(.7) rotateY(-28deg);opacity:.25;filter:blur(.5px);z-index:2}.carousel-card.far{opacity:0;transform:scale(.55) rotate(0deg)}
+.showcase{height:325px;display:flex;align-items:center;position:relative;z-index:1;min-width:0}.carousel{position:relative;width:100%;height:310px;overflow:visible;perspective:1100px;perspective-origin:50% 50%;isolation:isolate}
+.carousel-track{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;transform-style:preserve-3d}
+.carousel-card{position:absolute;width:230px;height:255px;border-radius:7px;overflow:hidden;transition:transform .65s cubic-bezier(.22,.61,.36,1),opacity .65s ease,filter .65s ease;box-shadow:0 5px 22px rgba(0,0,0,.14);transform-style:preserve-3d;backface-visibility:hidden;transform-origin:center center}
+.carousel-card img{width:100%;height:100%;object-fit:cover;display:block}
+.carousel-card.center{width:275px;height:295px;z-index:5;transform:translateX(0) rotateY(0deg) scale(1)}.carousel-card.left1{transform:translateX(-185px) rotateY(22deg) scale(.88);opacity:.50;z-index:4}.carousel-card.right1{transform:translateX(185px) rotateY(-22deg) scale(.88);opacity:.50;z-index:4}.carousel-card.left2{transform:translateX(-350px) rotateY(34deg) scale(.70);opacity:.12;filter:blur(.6px);z-index:2}.carousel-card.right2{transform:translateX(350px) rotateY(-34deg) scale(.70);opacity:.12;filter:blur(.6px);z-index:2}.carousel-card.far{opacity:0;transform:translateX(0) rotateY(0deg) scale(.55);z-index:1}
 .carousel-card .image-name{position:absolute;z-index:3;bottom:12px;left:0;right:0;text-align:center;color:#fff;font-size:14px;font-weight:700}
-.carousel-arrow{position:absolute;top:50%;transform:translateY(-50%);z-index:10;width:36px;height:36px;border:1px solid #d0d5da;background:#fff;border-radius:50%;font-size:26px;cursor:pointer}.carousel-arrow:hover{background:var(--accent);border-color:var(--accent)}.carousel-arrow.left{left:4px}.carousel-arrow.right{right:4px}
+.carousel-arrow:hover{background:var(--accent);border-color:var(--accent)}.carousel-arrow.left{left:4px}.carousel-arrow.right{right:4px}
 .carousel-dots{position:absolute;bottom:1px;left:0;right:0;text-align:center;z-index:12}.carousel-dots button{width:8px;height:8px;border:0;border-radius:50%;background:#adb3ba;margin:0 4px;padding:0}.carousel-dots button.active{background:#91c900}
 
 .projects-section,.toolbox-section,.experience-section,.contact-section{display:grid;grid-template-columns:54px 1fr;gap:30px}
 .section-content{min-width:0}.project-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-top:22px}
 .project-card{border:1px solid #d7dce1;border-radius:7px;overflow:hidden;background:#fff;box-shadow:0 2px 7px rgba(0,0,0,.05);transition:.2s}.project-card:hover{transform:translateY(-2px);box-shadow:0 7px 18px rgba(0,0,0,.09)}
-.project-image{height:125px;background:#eef0f2}.project-image img{width:100%;height:100%;object-fit:cover}.project-card-body{padding:13px}.project-card h3{font-size:14px;line-height:1.3;margin:0 0 7px}.project-card p{font-size:11px;line-height:1.55;color:var(--muted);margin:0 0 10px}.project-card-body span{font-size:11px;color:#76a900;font-weight:700}
+.project-image{height:125px;background:#eef0f2;display:block}.project-image img{width:100%;height:100%;object-fit:cover}.project-card-body{padding:13px}.project-card h3{font-size:14px;line-height:1.3;margin:0 0 7px}.project-card p{font-size:11px;line-height:1.55;color:var(--muted);margin:0 0 10px}.project-card-body span{font-size:11px;color:#76a900;font-weight:700}
 
 .toolbox-section{padding-top:30px;padding-bottom:30px}.toolbox-content{display:flex;align-items:center;gap:42px}.tool-list{display:grid;grid-template-columns:repeat(6,1fr);flex:1;border-left:1px solid var(--line)}.tool{padding:3px 18px;border-right:1px solid var(--line)}.tool strong{display:block;font-size:11px;white-space:nowrap}.tool span{font-size:10px;color:var(--muted)}
 .experience-section{padding-top:30px;padding-bottom:30px}.experience-section .section-content{display:flex;align-items:center;gap:42px}.experience-list{display:grid;grid-template-columns:repeat(3,1fr);gap:25px;flex:1}.experience-list article{position:relative;padding-left:18px;border-left:1px solid #cbd0d5}.timeline-dot{position:absolute;width:8px;height:8px;border-radius:50%;background:#a6e300;left:-4px;top:3px}.experience-list strong{display:block;font-size:12px}.experience-list small{display:block;color:var(--muted);font-size:11px;margin-top:4px}
@@ -40,8 +40,147 @@ footer{background:#080a0c;color:#cbd0d5;padding:20px 32px;display:flex;justify-c
 
 .carousel-dots{display:none!important}
 
-.dark .project-card,.dark .carousel-arrow{background:var(--card);color:var(--ink)}
+.dark .project-card,.dark 
 .dark .project-card{border-color:var(--line)}
 .dark .project-card p,.dark .contact-links a{color:var(--muted)}
 .dark .tool{border-color:var(--line)}
-.dark .carousel-arrow{border-color:var(--line)}
+.dark 
+
+.project-image img{display:none!important}
+
+.showcase::before,.showcase::after{content:"";position:absolute;top:0;bottom:0;width:105px;z-index:7;pointer-events:none}
+.showcase::before{left:-1px;background:linear-gradient(90deg,var(--bg) 0%,var(--bg) 18%,transparent 100%)}
+.showcase::after{right:-1px;background:linear-gradient(270deg,var(--bg) 0%,var(--bg) 18%,transparent 100%)}
+.dark .carousel-card.left1,.dark .carousel-card.right1{opacity:.24}
+.dark .carousel-card.left2,.dark .carousel-card.right2{opacity:.055}
+.dark 
+
+
+
+.showcase,
+.carousel,
+.carousel-track{
+  background:transparent !important;
+  box-shadow:none !important;
+}
+
+
+
+/* FINAL CAROUSEL CLEANUP */
+.carousel,
+.carousel-track,
+.carousel-card,
+.carousel-card img{
+  background:transparent !important;
+}
+
+.carousel{
+  overflow:hidden !important;
+  isolation:isolate;
+}
+
+.carousel-track{
+  background:transparent !important;
+  box-shadow:none !important;
+  border:0 !important;
+}
+
+.carousel-card{
+  background:transparent !important;
+  border:0 !important;
+  box-shadow:0 5px 22px rgba(0,0,0,.14) !important;
+}
+
+.carousel-card img{
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  background:transparent !important;
+}
+
+/* Immediate side images remain clear. */
+.carousel-card.left1,
+.carousel-card.right1{
+  opacity:.96 !important;
+  filter:none !important;
+}
+
+/* Buttons are always prominent and independent of carousel opacity/filter. */
+.carousel-arrow{
+  position:absolute !important;
+  top:50% !important;
+  transform:translateY(-50%) !important;
+  z-index:100 !important;
+  width:44px !important;
+  height:44px !important;
+  padding:0 !important;
+  border:2px solid #ffffff !important;
+  border-radius:50% !important;
+  background:#11161a !important;
+  color:#ffffff !important;
+  opacity:1 !important;
+  filter:none !important;
+  mix-blend-mode:normal !important;
+  isolation:isolate !important;
+  box-shadow:0 3px 12px rgba(0,0,0,.35) !important;
+  cursor:pointer !important;
+  font-size:30px !important;
+  font-weight:400 !important;
+  line-height:36px !important;
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+}
+.carousel-arrow.left{left:10px !important}
+.carousel-arrow.right{right:10px !important}
+.carousel-arrow:hover{
+  background:#baff00 !important;
+  color:#111 !important;
+  border-color:#baff00 !important;
+  opacity:1 !important;
+}
+.carousel-arrow:active{
+  transform:translateY(-50%) scale(.94) !important;
+}
+
+/* Never dim the buttons when the theme changes. */
+html.dark .carousel-arrow{
+  background:#fff !important;
+  color:#111 !important;
+  border-color:#d0d5da !important;
+  opacity:1 !important;
+}
+
+/* No transition on large page surfaces: prevents the sharp rectangle
+   that can appear while switching light/dark mode. */
+body,
+main,
+.about-section,
+.content-section,
+.showcase,
+.carousel,
+.carousel-track{
+  transition:none !important;
+}
+
+/* Theme transitions only on small controls/cards, not the carousel container. */
+.theme-toggle{
+  transition:background .2s ease,color .2s ease,border-color .2s ease !important;
+}
+
+.carousel-arrow,
+html.dark .carousel-arrow{
+  background:#11161a !important;
+  color:#fff !important;
+  border:2px solid #fff !important;
+  opacity:1 !important;
+  filter:none !important;
+  box-shadow:0 3px 12px rgba(0,0,0,.35) !important;
+}
+.carousel-arrow:hover,
+html.dark .carousel-arrow:hover{
+  background:#baff00 !important;
+  color:#111 !important;
+  border-color:#baff00 !important;
+}
